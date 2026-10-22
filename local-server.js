@@ -47,10 +47,17 @@ const server = http.createServer((req, res) => {
 
     let filePath = path.join(BASE_DIR, reqPath);
 
-    // If file doesn't exist, check if appending .html works
-    if (!fs.existsSync(filePath)) {
+    // If directory, look for index.html inside it
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+        const dirIndex = path.join(filePath, 'index.html');
+        if (fs.existsSync(dirIndex)) {
+            filePath = dirIndex;
+        }
+    } else if (!fs.existsSync(filePath)) {
         if (fs.existsSync(filePath + '.html')) {
             filePath += '.html';
+        } else if (fs.existsSync(path.join(filePath, 'index.html'))) {
+            filePath = path.join(filePath, 'index.html');
         }
     }
 

@@ -1,16 +1,17 @@
 {
-  "name": "aqualine-plumbing",
+  "name": "aqualine-services",
   "version": "1.0.0",
-  "description": "Aqua Line - Master Flow & Precision Plumbing",
+  "description": "AquaLine Services Pvt Ltd — Complete Water Treatment Solutions, Equipment, Chemicals, and Application Services",
   "scripts": {
     "start": "node local-server.js",
     "dev": "node local-server.js"
   },
   "keywords": [
-    "plumbing",
     "aqualine",
-    "red-noir"
+    "water-treatment",
+    "chemicals",
+    "pakistan"
   ],
-  "author": "Aqua Line",
+  "author": "AquaLine Services Pvt Ltd",
   "license": "ISC"
 }
