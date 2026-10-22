@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/7 Emergency Plumbing Dispatch | Aqua Line Rapid Response</title>
+    <meta name="description" content="Immediate 24/7 Emergency Plumbing Dispatch. 20-35 minute average arrival. Call or WhatsApp +923046902756 now for burst pipes, sewer backups, and urgent leaks.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="selection-red bg-black text-white font-inter relative overflow-x-hidden">
+
+    <!-- Global Background with Urgent Red Ambience -->
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#220404] via-black to-black"></div>
+        <div class="absolute top-0 left-0 w-[1px] h-[1px] bg-transparent stars-1 animate-[animStar_50s_linear_infinite]"></div>
+        <div class="absolute top-0 left-0 w-[2px] h-[2px] bg-transparent stars-2 animate-[animStar_80s_linear_infinite]"></div>
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[850px] h-[850px] bg-red-600/15 rounded-full blur-[150px]"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(circle_at_center,black_45%,transparent_85%)]"></div>
+    </div>
+
+    <!-- Top Blur -->
+    <div class="gradient-blur"></div>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/923046902756?text=EMERGENCY%20DISPATCH%3A%20I%20have%20an%20active%20plumbing%20crisis%20and%20need%20immediate%20help." target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+            <iconify-icon icon="logos:whatsapp-icon" class="w-6 h-6"></iconify-icon>
+            <span class="font-bold">WhatsApp Dispatch</span>
+        </a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-50 pt-5 px-4 transition-all duration-300">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between bg-black/70 backdrop-blur-xl border border-red-500/30 rounded-full px-6 py-3 shadow-[0_0_30px_rgba(239,35,60,0.2)]">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-7 h-7 bg-[#ef233c] rounded-lg rotate-45 flex items-center justify-center shadow-[0_0_20px_rgba(239,35,60,0.8)]">
+                    <iconify-icon icon="lucide:siren" class="-rotate-45 text-white text-xs"></iconify-icon>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold font-manrope tracking-tight text-white flex items-center gap-1">
+                        AQUA <span class="text-[#ef233c]">LINE</span>
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-red-400 font-bold -mt-1">24/7 Rapid Response</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Home</a>
+                <a href="services.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Services</a>
+                <a href="emergency.html" class="text-sm font-bold text-red-400 border-b-2 border-[#ef233c] pb-0.5 transition-colors flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                    24/7 Emergency
+                </a>
+                <a href="about.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">About</a>
+                <a href="contact.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <!-- Right Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="tel:+923046902756" class="flex items-center gap-2 text-xs font-bold text-white bg-red-600/30 hover:bg-red-600/50 border border-red-500/50 px-4 py-2 rounded-full transition-all">
+                    <iconify-icon icon="lucide:phone-call" class="text-[#ef233c] animate-bounce"></iconify-icon>
+                    +92 304 6902756
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-400 hover:text-white">
+                    <iconify-icon icon="lucide:menu" class="w-6 h-6"></iconify-icon>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden max-w-md mx-auto mt-3 p-6 bg-zinc-950/95 backdrop-blur-2xl border border-red-500/30 rounded-2xl shadow-2xl">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                <span class="text-sm font-bold text-white">Emergency Center</span>
+                <button id="mobile-menu-close" class="text-zinc-400 hover:text-white">
+                    <iconify-icon icon="lucide:x" class="w-5 h-5"></iconify-icon>
+                </button>
+            </div>
+            <div class="flex flex-col gap-4 mt-4">
+                <a href="index.html" class="text-zinc-400 hover:text-white py-1">Home</a>
+                <a href="services.html" class="text-zinc-400 hover:text-white py-1">Services</a>
+                <a href="emergency.html" class="text-red-400 font-bold py-1">24/7 Emergency</a>
+                <a href="about.html" class="text-zinc-400 hover:text-white py-1">About Us</a>
+                <a href="contact.html" class="text-zinc-400 hover:text-white py-1">Contact</a>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/10 flex flex-col gap-3">
+                <a href="https://wa.me/923046902756?text=EMERGENCY%20PLUMBING%20DISPATCH%20REQUIRED" class="w-full py-3 bg-[#ef233c] text-white font-bold rounded-xl text-center flex items-center justify-center gap-2">
+                    <iconify-icon icon="logos:whatsapp-icon" class="w-5 h-5"></iconify-icon>
+                    WhatsApp: +92 304 6902756
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-36 pb-24 px-6">
+        <!-- Emergency Dispatch Hero -->
+        <section class="max-w-4xl mx-auto text-center mb-16 animate-fade-up">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-red-950/80 border border-red-500 text-red-300 text-xs font-bold tracking-widest uppercase mb-6 shadow-[0_0_20px_rgba(239,35,60,0.4)]">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-90"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-[#ef233c]"></span>
+                </span>
+                Active Emergency Dispatch Center
+            </div>
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter font-manrope mb-6 text-white leading-tight">
+                Immediate 24/7 <br />
+                <span class="text-[#ef233c]">Emergency Plumbing</span> Dispatch
+            </h1>
+            <p class="text-lg md:text-xl text-zinc-300 max-w-2xl mx-auto leading-relaxed mb-10">
+                Water damage multiplies exponentially every 15 minutes. Our emergency trucks are mobile, fully stocked with industrial extraction pumps, pipe crimpers, and replacement valves.
+            </p>
+
+            <!-- Dual Urgent Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-5 max-w-2xl mx-auto">
+                <a href="https://wa.me/923046902756?text=URGENT%20DISPATCH%3A%20I%20have%20an%20active%20water%20burst%2Fflooding%20emergency.%20Please%20dispatch%20immediately!" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-5 bg-[#ef233c] hover:bg-red-700 text-white font-extrabold rounded-full text-base flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(239,35,60,0.6)] transition-all">
+                    <iconify-icon icon="logos:whatsapp-icon" class="w-6 h-6"></iconify-icon>
+                    <span>Emergency WhatsApp: +92 304 6902756</span>
+                </a>
+                <a href="tel:+923046902756" class="w-full sm:w-auto px-8 py-5 bg-zinc-900 hover:bg-zinc-800 text-white font-bold rounded-full border border-zinc-700 flex items-center justify-center gap-2 text-base transition-all">
+                    <iconify-icon icon="lucide:phone-call" class="text-[#ef233c] w-5 h-5"></iconify-icon>
+                    <span>Call Hotline Now</span>
+                </a>
+            </div>
+
+            <!-- Guarantee Bar -->
+            <div class="mt-8 flex items-center justify-center gap-6 text-xs text-zinc-400 font-mono">
+                <span class="flex items-center gap-1.5"><iconify-icon icon="lucide:clock" class="text-[#ef233c]"></iconify-icon> 20-35 Min Average Arrival</span>
+                <span class="flex items-center gap-1.5"><iconify-icon icon="lucide:shield" class="text-[#ef233c]"></iconify-icon> Zero After-Hours Hidden Surcharges</span>
+            </div>
+        </section>
+
+        <!-- What to Do Right Now While You Wait -->
+        <section class="max-w-5xl mx-auto my-20">
+            <div class="p-8 md:p-12 rounded-3xl border border-red-500/30 bg-gradient-to-b from-red-950/20 via-black to-black shadow-2xl">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-mono uppercase text-[#ef233c] tracking-widest block mb-2 font-bold">CRITICAL SAFETY INSTRUCTIONS</span>
+                    <h2 class="text-3xl md:text-4xl font-bold font-manrope text-white">What To Do Before Our Plumber Arrives</h2>
+                    <p class="text-sm text-zinc-400 mt-2">Take these 4 quick steps right now to protect your property and family.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Step 1 -->
+                    <div class="p-6 rounded-2xl bg-zinc-900/60 border border-white/5 flex gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 text-[#ef233c] font-black text-lg flex items-center justify-center shrink-0">
+                            1
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Shut Off the Main Water Valve</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">
+                                Locate your main stopcock valve (often near the water meter, under the kitchen sink, or outside the main entryway). Turn clockwise (right) until tight to cut off pressurized flow.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="p-6 rounded-2xl bg-zinc-900/60 border border-white/5 flex gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 text-[#ef233c] font-black text-lg flex items-center justify-center shrink-0">
+                            2
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Relieve Trapped Line Pressure</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">
+                                Open an outside hose spigot or the lowest sink tap in the home. This drains the remaining trapped water safely outside instead of spewing from the burst pipe.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="p-6 rounded-2xl bg-zinc-900/60 border border-white/5 flex gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 text-[#ef233c] font-black text-lg flex items-center justify-center shrink-0">
+                            3
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Avoid Electrical Contact</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">
+                                If standing water reaches electrical outlets, baseboard wiring, or appliances, DO NOT enter the water. Go to the breaker box and switch off power to affected zones immediately.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="p-6 rounded-2xl bg-zinc-900/60 border border-white/5 flex gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-red-600/20 border border-red-500/40 text-[#ef233c] font-black text-lg flex items-center justify-center shrink-0">
+                            4
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-white mb-1">Send a 5-Second Video on WhatsApp</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">
+                                Take a short video of the leak and send it to our WhatsApp at <span class="text-white font-semibold">+923046902756</span> so our en-route technician prepares exact fittings before arrival.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Emergencies We Resolve -->
+        <section class="max-w-6xl mx-auto my-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-manrope text-white mb-3">Crises Handled Within 35 Minutes</h2>
+                <p class="text-zinc-400 text-sm">Our fully equipped mobile rigs carry complete industrial inventory.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-white/10 hover:border-red-500/30 transition-all">
+                    <div class="text-[#ef233c] mb-4"><iconify-icon icon="lucide:alert-triangle" class="w-8 h-8"></iconify-icon></div>
+                    <h3 class="text-xl font-bold text-white font-manrope mb-2">Severe Burst Pipes & Floods</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Copper, PPR, and PVC pipe ruptures crimped, cut, and soldered with permanent lifetime couplings.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-white/10 hover:border-red-500/30 transition-all">
+                    <div class="text-[#ef233c] mb-4"><iconify-icon icon="lucide:waves" class="w-8 h-8"></iconify-icon></div>
+                    <h3 class="text-xl font-bold text-white font-manrope mb-2">Main Sewer Line Overflow</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Dangerous backflow of raw sewage reversed, hydro-jetted, and sanitized with bio-enzymatic treatment.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-zinc-950 border border-white/10 hover:border-red-500/30 transition-all">
+                    <div class="text-[#ef233c] mb-4"><iconify-icon icon="lucide:flame" class="w-8 h-8"></iconify-icon></div>
+                    <h3 class="text-xl font-bold text-white font-manrope mb-2">Water Heater Tank Failure</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Ruptured tanks drained immediately, gas lines secured, and high-efficiency emergency replacements installed.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-zinc-900 pt-16 pb-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-6 h-6 bg-[#ef233c] rounded-md rotate-45 flex items-center justify-center">
+                        <iconify-icon icon="lucide:droplet" class="-rotate-45 text-white text-xs"></iconify-icon>
+                    </div>
+                    <span class="text-2xl font-black font-manrope tracking-tight text-white">
+                        AQUA <span class="text-[#ef233c]">LINE</span>
+                    </span>
+                </div>
+                <p class="text-zinc-400 max-w-sm text-sm">
+                    24/7 Rapid Emergency Response. Zero downtime, zero compromise.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold text-[#ef233c] uppercase tracking-widest mb-4">Pages</h4>
+                <ul class="space-y-2 text-zinc-400 text-sm">
+                    <li><a href="index.html" class="hover:text-white">Home</a></li>
+                    <li><a href="services.html" class="hover:text-white">Services</a></li>
+                    <li><a href="emergency.html" class="text-red-400 font-semibold">24/7 Emergency</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold text-[#ef233c] uppercase tracking-widest mb-4">Emergency Dispatch</h4>
+                <p class="text-sm text-white font-semibold mb-1">WhatsApp: +92 304 6902756</p>
+                <p class="text-xs text-zinc-400">Trucks staged city-wide for immediate dispatch.</p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center py-4 opacity-20 pointer-events-none overflow-hidden">
+            <h1 class="text-[17vw] leading-none font-black font-manrope tracking-tighter text-stroke select-none">
+                AQUA LINE
+            </h1>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 border-t border-zinc-900 pt-6 text-center text-zinc-600 text-xs">
+            &copy; 2026 Aqua Line Master Plumbing Inc. 24/7 Emergency Operations.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

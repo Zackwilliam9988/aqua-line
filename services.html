@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Plumbing Services | Aqua Line Master Engineering</title>
+    <meta name="description" content="Explore Aqua Line's complete catalog of master-grade plumbing services across 8 specialized categories. Upfront pricing, non-invasive diagnostics, and 24/7 dispatch. WhatsApp: +923046902756.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify Icons -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom Style System -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(239, 35, 60, 0.4);
+            box-shadow: 0 12px 30px -10px rgba(239, 35, 60, 0.25);
+        }
+        .filter-tab.active {
+            background-color: #ef233c;
+            color: #ffffff;
+            border-color: #ef233c;
+            box-shadow: 0 0 20px rgba(239, 35, 60, 0.4);
+        }
+    </style>
+</head>
+<body class="selection-red bg-black text-white font-inter relative overflow-x-hidden">
+
+    <!-- Global Background Elements -->
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#180404] via-black to-black"></div>
+        <div class="absolute top-0 left-0 w-[1px] h-[1px] bg-transparent stars-1 animate-[animStar_50s_linear_infinite]"></div>
+        <div class="absolute top-0 left-0 w-[2px] h-[2px] bg-transparent stars-2 animate-[animStar_80s_linear_infinite]"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-600/10 rounded-full blur-[140px]"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(circle_at_center,black_45%,transparent_85%)]"></div>
+    </div>
+
+    <!-- Top Blur Gradient -->
+    <div class="gradient-blur"></div>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/923046902756?text=Hello%20AquaLine%20Plumbing%2C%20I%20am%20inquiring%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="whatsapp-btn group">
+            <iconify-icon icon="logos:whatsapp-icon" class="w-6 h-6"></iconify-icon>
+            <span class="hidden sm:inline">WhatsApp Dispatch</span>
+            <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+        </a>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-50 pt-5 px-4 transition-all duration-300">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between bg-black/60 backdrop-blur-xl border border-white/10 rounded-full px-6 py-3 shadow-2xl transition-all">
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-7 h-7 bg-gradient-to-tr from-[#ef233c] to-red-500 rounded-lg rotate-45 flex items-center justify-center shadow-[0_0_15px_rgba(239,35,60,0.6)] group-hover:rotate-90 transition-transform duration-500">
+                    <iconify-icon icon="lucide:droplet" class="-rotate-45 text-white text-xs"></iconify-icon>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold font-manrope tracking-tight text-white flex items-center gap-1">
+                        AQUA <span class="text-[#ef233c]">LINE</span>
+                    </span>
+                    <span class="text-[9px] uppercase tracking-widest text-zinc-400 font-semibold -mt-1">Precision Plumbing</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Links -->
+            <div class="hidden lg:flex items-center gap-8">
+                <a href="index.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Home</a>
+                <a href="services.html" class="text-sm font-semibold text-white border-b-2 border-[#ef233c] pb-0.5 transition-colors">Services</a>
+                <a href="emergency.html" class="text-sm font-medium text-red-400 hover:text-red-300 transition-colors flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-ping"></span>
+                    24/7 Emergency
+                </a>
+                <a href="about.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">About</a>
+                <a href="contact.html" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <!-- Right Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/923046902756?text=Hi%20AquaLine%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20plumbing%20services." target="_blank" class="shiny-cta py-2 px-5 text-xs">
+                    <span class="relative z-10 flex items-center gap-2 text-white font-bold">
+                        <iconify-icon icon="logos:whatsapp-icon" class="w-4 h-4"></iconify-icon>
+                        WhatsApp: +92 304 6902756
+                    </span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-zinc-400 hover:text-white" aria-label="Toggle menu">
+                    <iconify-icon icon="lucide:menu" class="w-6 h-6"></iconify-icon>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden max-w-md mx-auto mt-3 p-6 bg-zinc-950/95 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl">
+            <div class="flex items-center justify-between pb-4 border-b border-white/10">
+                <span class="text-sm font-bold text-zinc-300">Navigation Menu</span>
+                <button id="mobile-menu-close" class="text-zinc-400 hover:text-white">
+                    <iconify-icon icon="lucide:x" class="w-5 h-5"></iconify-icon>
+                </button>
+            </div>
+            <div class="flex flex-col gap-4 mt-4">
+                <a href="index.html" class="text-zinc-400 hover:text-white py-1">Home</a>
+                <a href="services.html" class="text-white font-semibold py-1">All Services</a>
+                <a href="emergency.html" class="text-red-400 hover:text-red-300 py-1 font-semibold flex items-center justify-between">
+                    <span>24/7 Emergency Dispatch</span>
+                    <span class="text-xs bg-red-950 text-red-400 px-2 py-0.5 rounded border border-red-800/50">Urgent</span>
+                </a>
+                <a href="about.html" class="text-zinc-400 hover:text-white py-1">About Aqua Line</a>
+                <a href="contact.html" class="text-zinc-400 hover:text-white py-1">Contact</a>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/10 flex flex-col gap-3">
+                <a href="https://wa.me/923046902756" class="w-full py-3 bg-[#ef233c] text-white font-bold rounded-xl text-center flex items-center justify-center gap-2">
+                    <iconify-icon icon="logos:whatsapp-icon" class="w-5 h-5"></iconify-icon>
+                    WhatsApp: +92 304 6902756
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+
+        <!-- ========================================== -->
+        <!-- 1. HERO SECTION                            -->
+        <!-- ========================================== -->
+        <section class="relative min-h-[75vh] flex items-center justify-center pt-36 pb-20 px-6 overflow-hidden">
+            <!-- Hero Background Visual with Red Noir Mask -->
+            <div class="absolute inset-0 z-0">
+                <img src="assets/images/hero.jpg" alt="Aqua Line Plumbing Infrastructure" class="w-full h-full object-cover object-center opacity-25 filter grayscale contrast-125">
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black"></div>
+            </div>
+
+            <div class="relative z-10 max-w-5xl mx-auto text-center animate-fade-up">
+                <!-- Verified Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
+                    <span class="w-2 h-2 rounded-full bg-[#ef233c] shadow-[0_0_8px_#ef233c]"></span>
+                    <span class="text-xs font-semibold text-zinc-300 font-manrope uppercase tracking-wider">
+                        Complete Service Catalog • 8 Specialized Categories
+                    </span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter font-manrope leading-[1.1] mb-6 text-white">
+                    Master-Grade <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">Plumbing Services</span> <br />
+                    <span class="text-[#ef233c] inline-block relative">
+                        & Precision Engineering
+                        <svg class="absolute w-full h-3 -bottom-2 left-0 text-[#ef233c] opacity-60" viewBox="0 0 100 10" preserveAspectRatio="none">
+                            <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                    </span>
+                </h1>
+
+                <!-- Short Description -->
+                <p class="text-base sm:text-lg md:text-xl text-zinc-400 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+                    From complex underground pipeline relining and acoustic leak detection to residential bathroom fit-offs and 24/7 emergency interventions, explore our full spectrum of guild-certified plumbing solutions.
+                </p>
+
+                <!-- Primary Call to Action & Navigation Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/923046902756?text=Hi%20AquaLine%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20plumbing%20services." target="_blank" rel="noopener noreferrer" class="shiny-cta group w-full sm:w-auto">
+                        <span class="relative z-10 flex items-center justify-center gap-2 text-white font-bold text-sm">
+                            <iconify-icon icon="logos:whatsapp-icon" class="w-4 h-4"></iconify-icon>
+                            Request a Quote via WhatsApp
+                            <iconify-icon icon="lucide:arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform text-[#ef233c]"></iconify-icon>
+                        </span>
+                    </a>
+
+                    <a href="#services-directory" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-zinc-900/90 border border-zinc-800 text-zinc-300 font-semibold hover:text-white hover:bg-zinc-800 transition-all flex items-center justify-center gap-2 text-sm">
+                        <iconify-icon icon="lucide:layout-grid" class="w-4 h-4 text-[#ef233c]"></iconify-icon>
+                        Browse All 8 Categories
+                    </a>
+                </div>
+
+                <!-- Fast Filter & Search Bar in Hero -->
+                <div class="mt-12 max-w-xl mx-auto">
+                    <div class="relative">
+                        <iconify-icon icon="lucide:search" class="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500 w-5 h-5"></iconify-icon>
+                        <input type="text" id="service-search-input" placeholder="Search 50+ services (e.g. leak, geyser, drain, toilet, pump)..." class="w-full bg-zinc-900/90 border border-white/10 rounded-full pl-12 pr-12 py-3.5 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-[#ef233c] transition-all shadow-xl backdrop-blur-md">
+                        <button id="search-clear-btn" class="hidden absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-white text-xs">
+                            <iconify-icon icon="lucide:x" class="w-4 h-4"></iconify-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 2. TRUST SECTION                           -->
+        <!-- ========================================== -->
+        <section class="py-12 border-y border-white/5 bg-white/[0.015] backdrop-blur-md">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <div class="text-3xl font-extrabold text-white font-manrope flex items-center justify-center gap-1">
+                            <iconify-icon icon="lucide:shield-check" class="text-[#ef233c] w-6 h-6"></iconify-icon>
+                            100%
+                        </div>
+                        <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Certified Workmanship</div>
+                        <p class="text-[11px] text-zinc-500 mt-1">Guild-trained technicians</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <div class="text-3xl font-extrabold text-white font-manrope flex items-center justify-center gap-1">
+                            <iconify-icon icon="lucide:scan" class="text-[#ef233c] w-6 h-6"></iconify-icon>
+                            FLIR & CCTV
+                        </div>
+                        <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Non-Invasive Tech</div>
+                        <p class="text-[11px] text-zinc-500 mt-1">Zero guesswork diagnostics</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <div class="text-3xl font-extrabold text-white font-manrope flex items-center justify-center gap-1">
+                            <iconify-icon icon="lucide:file-check" class="text-[#ef233c] w-6 h-6"></iconify-icon>
+                            Upfront
+                        </div>
+                        <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Transparent Pricing</div>
+                        <p class="text-[11px] text-zinc-500 mt-1">No hidden surprise fees</p>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5">
+                        <div class="text-3xl font-extrabold text-[#ef233c] font-manrope flex items-center justify-center gap-1">
+                            <iconify-icon icon="lucide:clock" class="text-[#ef233c] w-6 h-6"></iconify-icon>
+                            Prompt
+                        </div>
+                        <div class="text-xs text-zinc-400 uppercase tracking-wider font-semibold mt-1">Rapid Response Dispatch</div>
+                        <p class="text-[11px] text-zinc-500 mt-1">WhatsApp priority routing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 3. SERVICES OVERVIEW (8 Categories Grid)   -->
+        <!-- ========================================== -->
+        <section id="services-directory" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16 animate-fade-up">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/50 border border-red-500/20 text-[#ef233c] text-xs font-bold tracking-widest uppercase mb-4">
+                        Comprehensive Directory
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-bold font-manrope text-white tracking-tight mb-4">
+                        Plumbing Services Overview
+                    </h2>
+                    <p class="text-base text-zinc-400">
+                        Select any of our 8 service divisions to jump directly to specific service listings, diagnostics, and WhatsApp booking.
+                    </p>
+                </div>
+
+                <!-- 8 Categories Overview Card Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    
+                    <!-- Category 1 -->
+                    <a href="#cat-general" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-red-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(239,35,60,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-red-950/40 border border-red-500/30 text-[#ef233c] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:wrench" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">7 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-[#ef233c] transition-colors">1. General Plumbing</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">Foundational pipe repairs, system installations, leak tests, and scheduled maintenance.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-[#ef233c] font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                    <!-- Category 2 -->
+                    <a href="#cat-bathroom-kitchen" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(245,158,11,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:bath" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">8 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-amber-400 transition-colors">2. Bathroom & Kitchen</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">Taps, mixer showers, toilets, undermount sinks, bathtubs, and luxury renovations.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-amber-400 font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                    <!-- Category 3 -->
+                    <a href="#cat-drainage-sewer" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-cyan-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(6,182,212,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-950/40 border border-cyan-500/30 text-cyan-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:waves" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">8 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-cyan-400 transition-colors">3. Drainage & Sewer</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">CCTV camera line scoping, root cutting, main sewer repairs, stormwater, and gutters.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-cyan-400 font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                    <!-- Category 4 -->
+                    <a href="#cat-water-supply" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-blue-950/40 border border-blue-500/30 text-blue-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:gauge" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">8 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-blue-400 transition-colors">4. Water Supply & Pipework</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">Water pressure balancing, storage tank cleaning & installation, booster pumps, and main lines.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-blue-400 font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                    <!-- Category 5 -->
+                    <a href="#cat-hot-water" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-rose-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(244,63,94,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-rose-950/40 border border-rose-500/30 text-rose-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:flame" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">6 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-rose-400 transition-colors">5. Hot Water & Heating</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">Instant geysers, electric boilers, solar water systems, hot line repairs, and descaling.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-rose-400 font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                    <!-- Category 6 -->
+                    <a href="#cat-commercial-residential" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-purple-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(139,92,246,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-950/40 border border-purple-500/30 text-purple-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:building-2" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">8 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-purple-400 transition-colors">6. Commercial & Residential</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">Homes, corporate offices, restaurants, retail shops, apartment stacks, and new construction.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-purple-400 font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                    <!-- Category 7 -->
+                    <a href="#cat-specialized" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(16,185,129,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:shield-check" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">8 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-emerald-400 transition-colors">7. Specialized Services</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">Backflow prevention, RO filtration, gas piping, precision audit inspections, and consultations.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-emerald-400 font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                    <!-- Category 8 -->
+                    <a href="#cat-additional" class="group p-6 rounded-2xl bg-zinc-950/80 border border-white/10 hover:border-pink-500/40 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(236,72,153,0.15)]">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="w-12 h-12 rounded-xl bg-pink-950/40 border border-pink-500/30 text-pink-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <iconify-icon icon="lucide:clock-4" class="w-6 h-6"></iconify-icon>
+                                </div>
+                                <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-white/5 text-zinc-400 border border-white/10">6 Services</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2 group-hover:text-pink-400 transition-colors">8. Additional Services</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed mb-4">Priority same-day calls, 24/7 emergency availability, transparent estimates, and property plans.</p>
+                        </div>
+                        <div class="flex items-center gap-1.5 text-xs text-pink-400 font-semibold pt-2 border-t border-white/5">
+                            <span>View Services</span>
+                            <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform"></iconify-icon>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4. CATEGORY DETAILS (All Individual Services) -->
+        <!-- ========================================== -->
+        <section id="category-details-section" class="py-20 px-6 bg-zinc-950/40 border-t border-white/5">
+            <div class="max-w-7xl mx-auto">
+                
+                <!-- Category Filter Navigation Pills -->
+                <div class="flex items-center justify-between flex-wrap gap-4 mb-12">
+                    <div>
+                        <span class="text-xs font-mono uppercase text-[#ef233c] tracking-widest font-bold">DETAILED DIRECTORY</span>
+                        <h2 class="text-3xl md:text-4xl font-bold font-manrope text-white mt-1">All Plumbing Services</h2>
+                    </div>
+
+                    <!-- Category Filter Buttons -->
+                    <div class="flex flex-wrap gap-2" id="filter-pills-container">
+                        <button data-filter="all" class="filter-tab active px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">All (59)</button>
+                        <button data-filter="cat-general" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">General</button>
+                        <button data-filter="cat-bathroom-kitchen" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">Bath & Kitchen</button>
+                        <button data-filter="cat-drainage-sewer" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">Drainage</button>
+                        <button data-filter="cat-water-supply" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">Water Supply</button>
+                        <button data-filter="cat-hot-water" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">Hot Water</button>
+                        <button data-filter="cat-commercial-residential" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">Commercial</button>
+                        <button data-filter="cat-specialized" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">Specialized</button>
+                        <button data-filter="cat-additional" class="filter-tab px-4 py-2 rounded-full text-xs font-semibold bg-white/5 border border-white/10 hover:border-white/20 transition-all">Additional</button>
+                    </div>
+                </div>
+
+                <!-- Dynamic Container where all 8 categories and 59 individual services render -->
+                <div id="services-dynamic-container" class="space-y-16">
+                    <!-- Populated dynamically via JS using SERVICES_DATA to guarantee centralized editability -->
+                </div>
+
+                <!-- Empty State for Search -->
+                <div id="no-services-found" class="hidden text-center py-20 p-8 rounded-2xl border border-white/10 bg-zinc-950">
+                    <iconify-icon icon="lucide:search-x" class="w-12 h-12 text-[#ef233c] mb-4"></iconify-icon>
+                    <h3 class="text-xl font-bold text-white mb-2">No matching plumbing services found</h3>
+                    <p class="text-sm text-zinc-400 max-w-md mx-auto mb-6">We likely still handle your custom requirement. Reach out directly on WhatsApp to speak with a technician.</p>
+                    <a href="https://wa.me/923046902756?text=Hi%20AquaLine%2C%20I%20did%20not%20find%20my%20exact%20plumbing%20issue%20listed%20on%20the%20website." target="_blank" class="px-6 py-3 bg-[#ef233c] text-white font-bold rounded-full text-xs uppercase tracking-wider inline-flex items-center gap-2">
+                        <iconify-icon icon="logos:whatsapp-icon" class="w-4 h-4"></iconify-icon>
+                        Inquire Directly on WhatsApp
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 5. WHY CHOOSE US                           -->
+        <!-- ========================================== -->
+        <section class="py-24 px-6 relative border-t border-white/5">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/50 border border-red-500/20 text-[#ef233c] text-xs font-bold tracking-widest uppercase">
+                            Customer-Focused Excellence
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-bold font-manrope text-white tracking-tight leading-tight">
+                            Why Discerning Clients Choose <span class="text-[#ef233c]">Aqua Line</span>
+                        </h2>
+                        <p class="text-base text-zinc-400 leading-relaxed font-light">
+                            Plumbing issues are stressful enough without dealing with guesswork, unpunctual technicians, or surprise invoices. We built Aqua Line on engineering rigor, clean work ethics, and absolute transparency.
+                        </p>
+
+                        <div class="space-y-4 pt-2">
+                            <div class="flex gap-4 p-4 rounded-xl bg-zinc-950 border border-white/5">
+                                <div class="w-10 h-10 rounded-lg bg-red-950/60 border border-red-500/30 text-[#ef233c] flex items-center justify-center shrink-0">
+                                    <iconify-icon icon="lucide:scan" class="w-5 h-5"></iconify-icon>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white mb-1">Non-Invasive Diagnostic Approach</h4>
+                                    <p class="text-xs text-zinc-400 leading-relaxed">We pinpoint slab leaks and pipe breaks using infrared thermal imaging and acoustic ground sensors—preventing unnecessary drywall or tile destruction.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 p-4 rounded-xl bg-zinc-950 border border-white/5">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-950/60 border border-emerald-500/30 text-emerald-400 flex items-center justify-center shrink-0">
+                                    <iconify-icon icon="lucide:receipt" class="w-5 h-5"></iconify-icon>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white mb-1">Upfront Written Quotations</h4>
+                                    <p class="text-xs text-zinc-400 leading-relaxed">You review and approve the exact itemized cost before our technicians turn a single wrench. No surprise surcharges or hidden trip fees.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-4 p-4 rounded-xl bg-zinc-950 border border-white/5">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 flex items-center justify-center shrink-0">
+                                    <iconify-icon icon="lucide:sparkles" class="w-5 h-5"></iconify-icon>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white mb-1">Clean Home & Worksite Pledge</h4>
+                                    <p class="text-xs text-zinc-400 leading-relaxed">Protective boot coverings, heavy-duty floor containment runners, and thorough cleanup ensure your residence stays spotless.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Side: Inspection Camera in Action -->
+                    <div class="lg:col-span-7 rounded-3xl overflow-hidden border border-white/10 relative group">
+                        <img src="assets/images/inspection.jpg" alt="Master Plumber Diagnosing Pipes" class="w-full h-[520px] object-cover group-hover:scale-102 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-black/80 backdrop-blur-md border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+                            <div>
+                                <span class="text-xs font-mono uppercase text-[#ef233c] tracking-wider font-semibold">Active Diagnostics</span>
+                                <h4 class="text-base font-bold text-white">Ridgid HD Fiber-Optic Line Scope</h4>
+                                <p class="text-xs text-zinc-400">Pinpoint accuracy down to &plusmn; 2 inches before any excavation.</p>
+                            </div>
+                            <a href="https://wa.me/923046902756?text=Hi%2C%20I%20would%20like%20to%20book%20a%20Camera%20Inspection." target="_blank" class="px-5 py-2.5 rounded-full bg-[#ef233c] hover:bg-red-700 text-white font-bold text-xs uppercase tracking-wider shrink-0 transition-all">
+                                Book Inspection
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 6. HOW IT WORKS                            -->
+        <!-- ========================================== -->
+        <section class="py-24 px-6 bg-zinc-950/60 border-t border-white/5">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-xs font-mono uppercase text-[#ef233c] tracking-widest font-bold block mb-2">SIMPLE 4-STEP PROCESS</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold font-manrope text-white">How It Works</h2>
+                    <p class="text-sm text-zinc-400 mt-2">Getting your plumbing issue resolved quickly and cleanly without hassle.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
+                    
+                    <!-- Step 1 -->
+                    <div class="p-6 rounded-2xl bg-black border border-white/10 relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-500/30 text-[#ef233c] font-black text-lg flex items-center justify-center mb-6">
+                                01
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2">Contact Us</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">Reach out via WhatsApp (+923046902756), direct phone call, or our online booking form anytime 24/7.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] text-zinc-500 font-mono">Response in &lt; 5 mins</div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="p-6 rounded-2xl bg-black border border-white/10 relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-white/15 text-white font-black text-lg flex items-center justify-center mb-6">
+                                02
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2">Discuss Problem</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">Share symptoms, photos, or short videos. Our master plumber assesses urgency and prepares required tools.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] text-zinc-500 font-mono">Photo/Video review</div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="p-6 rounded-2xl bg-black border border-white/10 relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-zinc-900 border border-white/15 text-white font-black text-lg flex items-center justify-center mb-6">
+                                03
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2">Get an Upfront Quote</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">We provide a transparent, itemized quote based on standard diagnostic rates. No surprise fees guaranteed.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] text-zinc-500 font-mono">100% Price transparency</div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="p-6 rounded-2xl bg-black border border-white/10 relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-500/30 text-[#ef233c] font-black text-lg flex items-center justify-center mb-6">
+                                04
+                            </div>
+                            <h3 class="text-lg font-bold text-white font-manrope mb-2">Service & Repair</h3>
+                            <p class="text-xs text-zinc-400 leading-relaxed">Our technician completes the repair with precision fittings, tests water pressure, cleans the area, and issues your warranty.</p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] text-zinc-500 font-mono">Guaranteed workmanship</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 7. CALL TO ACTION (CTA) SECTION            -->
+        <!-- ========================================== -->
+        <section class="py-24 px-6 text-center bg-gradient-to-b from-black via-zinc-950 to-black relative border-t border-white/5">
+            <div class="max-w-4xl mx-auto p-10 md:p-14 rounded-3xl border border-red-500/30 bg-[radial-gradient(ellipse_at_center,rgba(239,35,60,0.12),transparent_70%)] shadow-2xl">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950 border border-red-600 text-red-300 text-xs font-bold tracking-widest uppercase mb-6">
+                    <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span> Live Dispatch Center
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold font-manrope mb-6 tracking-tight text-white">
+                    Need Reliable Plumbing Assistance? <br />
+                    <span class="text-[#ef233c]">Talk to a Master Plumber Now</span>
+                </h2>
+                <p class="text-base text-zinc-300 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Whether you are planning a bathroom renovation, dealing with low water pressure, or facing a sudden leak, Aqua Line is ready with prompt, professional service.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="https://wa.me/923046902756?text=Hello%20AquaLine%2C%20I%20would%20like%20to%20discuss%20a%20plumbing%20service." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 bg-[#ef233c] hover:bg-red-700 text-white font-bold rounded-full text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-3 shadow-[0_0_30px_rgba(239,35,60,0.4)]">
+                        <iconify-icon icon="logos:whatsapp-icon" class="w-5 h-5"></iconify-icon>
+                        WhatsApp Dispatch: +92 304 6902756
+                    </a>
+                    <a href="contact.html" class="w-full sm:w-auto px-8 py-4 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 hover:text-white font-semibold rounded-full border border-zinc-700 transition-all flex items-center justify-center gap-2 text-sm">
+                        <iconify-icon icon="lucide:file-text" class="text-[#ef233c]"></iconify-icon>
+                        Submit Online Service Ticket
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 8. FAQ SECTION (Interactive Accordion)     -->
+        <!-- ========================================== -->
+        <section class="py-24 px-6 bg-black relative border-t border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="text-xs uppercase font-bold text-[#ef233c] tracking-widest block mb-2">COMMON INQUIRIES</span>
+                    <h2 class="text-3xl md:text-4xl font-bold font-manrope text-white">Frequently Asked Questions</h2>
+                    <p class="text-zinc-400 text-sm mt-2">Answers to common questions regarding our plumbing services, pricing, and procedures.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="rounded-2xl border border-white/10 bg-zinc-950 overflow-hidden">
+                        <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-white font-semibold hover:text-[#ef233c] transition-colors">
+                            <span class="text-sm md:text-base">How do I get an estimate for a plumbing repair or installation?</span>
+                            <iconify-icon icon="lucide:chevron-down" class="faq-icon text-[#ef233c] transition-transform duration-300"></iconify-icon>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs md:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                            You can easily send a photo or description of your issue directly to our WhatsApp at <span class="text-white font-semibold">+923046902756</span> or submit our online ticket. We provide an initial upfront estimate based on your description, and confirm the exact written scope before performing any work.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="rounded-2xl border border-white/10 bg-zinc-950 overflow-hidden">
+                        <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-white font-semibold hover:text-[#ef233c] transition-colors">
+                            <span class="text-sm md:text-base">What equipment do you use for leak detection?</span>
+                            <iconify-icon icon="lucide:chevron-down" class="faq-icon text-[#ef233c] transition-transform duration-300"></iconify-icon>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs md:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                            We utilize high-resolution FLIR infrared thermal imaging cameras to track temperature anomalies behind walls and floors, paired with sensitive acoustic listening amplifiers and digital pipe pressure monitors. This eliminates destructive trial-and-error drywall holes.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="rounded-2xl border border-white/10 bg-zinc-950 overflow-hidden">
+                        <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-white font-semibold hover:text-[#ef233c] transition-colors">
+                            <span class="text-sm md:text-base">Do you handle commercial properties and restaurants?</span>
+                            <iconify-icon icon="lucide:chevron-down" class="faq-icon text-[#ef233c] transition-transform duration-300"></iconify-icon>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs md:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                            Yes. We provide complete commercial plumbing services including commercial grease trap hydro-jetting, restroom flushometer maintenance, backflow prevention testing, multi-story risers, and scheduled preventative maintenance contracts for restaurants, retail shops, and corporate facilities.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="rounded-2xl border border-white/10 bg-zinc-950 overflow-hidden">
+                        <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-white font-semibold hover:text-[#ef233c] transition-colors">
+                            <span class="text-sm md:text-base">Can you install fixtures that I purchased myself?</span>
+                            <iconify-icon icon="lucide:chevron-down" class="faq-icon text-[#ef233c] transition-transform duration-300"></iconify-icon>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs md:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                            Absolutely. We regularly install customer-purchased designer faucets, rainfall showers, vanity sinks, water purifiers, and toilets. We inspect compatibility, ensure correct water pressure balances, and warranty our installation craftsmanship.
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="rounded-2xl border border-white/10 bg-zinc-950 overflow-hidden">
+                        <button class="faq-toggle w-full p-5 text-left flex items-center justify-between text-white font-semibold hover:text-[#ef233c] transition-colors">
+                            <span class="text-sm md:text-base">How fast can someone arrive in an emergency?</span>
+                            <iconify-icon icon="lucide:chevron-down" class="faq-icon text-[#ef233c] transition-transform duration-300"></iconify-icon>
+                        </button>
+                        <div class="faq-content hidden px-5 pb-5 text-xs md:text-sm text-zinc-400 leading-relaxed border-t border-white/5 pt-3">
+                            For urgent situations like major burst pipes, uncontrollable leaks, or severe sewer backups, our mobile emergency response units are on-call 24/7 with average dispatch arrivals between 20 to 45 minutes across our coverage zones.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- SERVICE DETAILS MODAL (Learn More Popup)   -->
+    <!-- ========================================== -->
+    <div id="service-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="relative w-full max-w-xl bg-zinc-950 border border-white/15 rounded-3xl p-6 sm:p-8 shadow-[0_0_50px_rgba(239,35,60,0.2)] animate-fade-up">
+            <button id="modal-close-btn" class="absolute top-5 right-5 text-zinc-400 hover:text-white p-2 rounded-full bg-white/5 border border-white/10">
+                <iconify-icon icon="lucide:x" class="w-5 h-5"></iconify-icon>
+            </button>
+
+            <div class="flex items-center gap-3 mb-4">
+                <div id="modal-icon-container" class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-500/40 text-[#ef233c] flex items-center justify-center text-xl">
+                    <iconify-icon id="modal-icon" icon="lucide:wrench"></iconify-icon>
+                </div>
+                <div>
+                    <span id="modal-category" class="text-xs font-mono uppercase text-[#ef233c] tracking-widest font-bold">Category</span>
+                    <h3 id="modal-title" class="text-2xl font-bold font-manrope text-white">Service Title</h3>
+                </div>
+            </div>
+
+            <p id="modal-description" class="text-sm text-zinc-300 leading-relaxed mb-6"></p>
+
+            <div class="space-y-3 mb-8 p-4 rounded-xl bg-black/50 border border-white/5 text-xs">
+                <div class="flex items-start gap-2">
+                    <span class="text-zinc-500 font-semibold uppercase tracking-wider shrink-0 w-28">Scope of Work:</span>
+                    <span id="modal-scope" class="text-zinc-300"></span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-zinc-500 font-semibold uppercase tracking-wider shrink-0 w-28">Estimated Time:</span>
+                    <span id="modal-time" class="text-white font-semibold"></span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="text-zinc-500 font-semibold uppercase tracking-wider shrink-0 w-28">Standard:</span>
+                    <span class="text-emerald-400 font-semibold">Guild Certified & Pressure Tested</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a id="modal-whatsapp-link" href="#" target="_blank" class="flex-1 py-3.5 bg-[#ef233c] hover:bg-red-700 text-white font-bold rounded-xl text-center text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+                    <iconify-icon icon="logos:whatsapp-icon" class="w-4 h-4"></iconify-icon>
+                    Book This Service via WhatsApp
+                </a>
+                <a href="contact.html" class="py-3.5 px-5 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-zinc-200 text-center font-semibold rounded-xl text-xs uppercase tracking-wider transition-all">
+                    Online Ticket
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- 9. FINAL CTA & FOOTER (Consistent with site)-->
+    <!-- ========================================== -->
+    <footer class="bg-black border-t border-zinc-900 pt-16 pb-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-6 h-6 bg-[#ef233c] rounded-md rotate-45 flex items-center justify-center">
+                        <iconify-icon icon="lucide:droplet" class="-rotate-45 text-white text-xs"></iconify-icon>
+                    </div>
+                    <span class="text-2xl font-black font-manrope tracking-tight text-white">
+                        AQUA <span class="text-[#ef233c]">LINE</span>
+                    </span>
+                </div>
+                <p class="text-zinc-400 max-w-sm text-sm leading-relaxed mb-6">
+                    Master engineering, high-tech non-invasive diagnostics, and 24/7 emergency dispatch for modern residential and commercial properties.
+                </p>
+                <div class="flex items-center gap-4 text-xs text-zinc-400">
+                    <div class="flex items-center gap-1.5"><iconify-icon icon="lucide:clock" class="text-[#ef233c]"></iconify-icon> 24/7/365 On Call</div>
+                    <div class="flex items-center gap-1.5"><iconify-icon icon="lucide:map-pin" class="text-[#ef233c]"></iconify-icon> Metropolitan Coverage</div>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold text-[#ef233c] uppercase tracking-widest mb-4">Pages</h4>
+                <ul class="space-y-2 text-zinc-400 text-sm">
+                    <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="services.html" class="text-white font-semibold">Services</a></li>
+                    <li><a href="emergency.html" class="text-red-400 hover:text-red-300 transition-colors">24/7 Emergency</a></li>
+                    <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-xs font-bold text-[#ef233c] uppercase tracking-widest mb-4">Direct Dispatch</h4>
+                <p class="text-sm text-white font-semibold mb-1">WhatsApp: +92 304 6902756</p>
+                <p class="text-xs text-zinc-400 mb-4">Available 24 hours a day, 7 days a week.</p>
+                <a href="https://wa.me/923046902756" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold text-[#ef233c] hover:underline">
+                    <span>Open WhatsApp Chat</span>
+                    <iconify-icon icon="lucide:arrow-right" class="w-3.5 h-3.5"></iconify-icon>
+                </a>
+            </div>
+        </div>
+
+        <!-- Huge Watermark Brand Text -->
+        <div class="flex justify-center items-center py-4 opacity-20 pointer-events-none overflow-hidden">
+            <h1 class="text-[17vw] leading-none font-black font-manrope tracking-tighter text-stroke select-none">
+                AQUA LINE
+            </h1>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 border-t border-zinc-900 pt-6 text-center text-zinc-600 text-xs">
+            &copy; 2026 Aqua Line Master Plumbing Inc. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Scripts: Centralized Data & Interactive Controller -->
+    <script src="js/services-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAllServices();
+            initServiceSearchAndFilter();
+            initServiceModal();
+        });
+
+        const WHATSAPP_NUM = '923046902756';
+
+        function renderAllServices(filterCategory = 'all', searchQuery = '') {
+            const container = document.getElementById('services-dynamic-container');
+            const noFoundEl = document.getElementById('no-services-found');
+            if (!container) return;
+
+            container.innerHTML = '';
+            let totalRendered = 0;
+
+            const normalizedQuery = searchQuery.trim().toLowerCase();
+
+            SERVICES_DATA.forEach(cat => {
+                if (cat.enabled === false) return;
+                if (filterCategory !== 'all' && cat.id !== filterCategory) return;
+
+                // Filter services within category based on search query
+                const matchingServices = cat.services.filter(svc => {
+                    if (svc.enabled === false) return false;
+                    if (!normalizedQuery) return true;
+                    return svc.title.toLowerCase().includes(normalizedQuery) ||
+                           svc.description.toLowerCase().includes(normalizedQuery);
+                });
+
+                if (matchingServices.length === 0) return;
+
+                totalRendered += matchingServices.length;
+
+                // Render Category Section
+                const catSection = document.createElement('div');
+                catSection.id = cat.id;
+                catSection.className = 'category-block scroll-mt-28';
+
+                catSection.innerHTML = `
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-6 border-b border-white/10 gap-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg" style="background: rgba(255,255,255,0.05); color: ${cat.color}; border: 1px solid rgba(255,255,255,0.1);">
+                                <iconify-icon icon="${cat.icon}"></iconify-icon>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold font-manrope text-white">${cat.name}</h3>
+                                <p class="text-xs text-zinc-400 mt-0.5">${cat.description}</p>
+                            </div>
+                        </div>
+                        <span class="text-xs font-mono font-semibold px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-300 self-start sm:self-auto shrink-0">
+                            ${matchingServices.length} Services
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        ${matchingServices.map(svc => `
+                            <div class="service-card p-6 rounded-2xl bg-zinc-950 border border-white/10 flex flex-col justify-between" data-service-id="${svc.id}">
+                                <div>
+                                    <div class="flex items-center justify-between mb-3">
+                                        <div class="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#ef233c]">
+                                            <iconify-icon icon="${svc.icon}" class="w-5 h-5"></iconify-icon>
+                                        </div>
+                                        <span class="text-[10px] font-mono text-zinc-500 uppercase tracking-wider">${cat.shortName}</span>
+                                    </div>
+                                    <h4 class="text-base font-bold font-manrope text-white mb-2 leading-snug">${svc.title}</h4>
+                                    <p class="text-xs text-zinc-400 leading-relaxed mb-4">${svc.description}</p>
+                                </div>
+
+                                <div class="pt-4 border-t border-white/5 flex items-center justify-between gap-2 mt-auto">
+                                    <button onclick="openServiceModal('${svc.id}')" class="text-xs font-semibold text-zinc-400 hover:text-white flex items-center gap-1 transition-colors">
+                                        <span>Learn More</span>
+                                        <iconify-icon icon="lucide:info" class="w-3.5 h-3.5"></iconify-icon>
+                                    </button>
+
+                                    <a href="https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(`Hello Aqua Line Plumbing! 🚰\n\nI want to book/inquire about: *${svc.title}* (${cat.name}).\nPlease share your current availability and estimate.`)}" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-full bg-[#ef233c]/15 hover:bg-[#ef233c] text-red-200 hover:text-white border border-red-500/30 text-xs font-bold transition-all flex items-center gap-1.5">
+                                        <iconify-icon icon="logos:whatsapp-icon" class="w-3 h-3"></iconify-icon>
+                                        <span>Book</span>
+                                    </a>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+
+                container.appendChild(catSection);
+            });
+
+            if (noFoundEl) {
+                if (totalRendered === 0) {
+                    noFoundEl.classList.remove('hidden');
+                } else {
+                    noFoundEl.classList.add('hidden');
+                }
+            }
+        }
+
+        function initServiceSearchAndFilter() {
+            const searchInput = document.getElementById('service-search-input');
+            const clearBtn = document.getElementById('search-clear-btn');
+            const filterBtns = document.querySelectorAll('.filter-tab');
+
+            let currentFilter = 'all';
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.getAttribute('data-filter') || 'all';
+                    renderAllServices(currentFilter, searchInput ? searchInput.value : '');
+                });
+            });
+
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const val = e.target.value;
+                    if (clearBtn) {
+                        if (val.length > 0) clearBtn.classList.remove('hidden');
+                        else clearBtn.classList.add('hidden');
+                    }
+                    renderAllServices(currentFilter, val);
+                });
+            }
+
+            if (clearBtn && searchInput) {
+                clearBtn.addEventListener('click', () => {
+                    searchInput.value = '';
+                    clearBtn.classList.add('hidden');
+                    renderAllServices(currentFilter, '');
+                    searchInput.focus();
+                });
+            }
+        }
+
+        // Modal Functionality
+        let currentModalService = null;
+
+        window.openServiceModal = function(serviceId) {
+            let foundService = null;
+            let foundCat = null;
+
+            for (const cat of SERVICES_DATA) {
+                const s = cat.services.find(item => item.id === serviceId);
+                if (s) {
+                    foundService = s;
+                    foundCat = cat;
+                    break;
+                }
+            }
+
+            if (!foundService) return;
+
+            document.getElementById('modal-title').textContent = foundService.title;
+            document.getElementById('modal-category').textContent = foundCat.name;
+            document.getElementById('modal-description').textContent = foundService.description;
+            document.getElementById('modal-scope').textContent = foundService.scope || 'Standard diagnostic, precision repair, and code-compliant installation.';
+            document.getElementById('modal-time').textContent = foundService.estTime || '1 - 3 hours';
+            document.getElementById('modal-icon').setAttribute('icon', foundService.icon || 'lucide:wrench');
+
+            const whatsappLink = document.getElementById('modal-whatsapp-link');
+            const message = `Hello Aqua Line Plumbing! 🚰\n\nI would like to inquire about booking:\n• Service: ${foundService.title}\n• Category: ${foundCat.name}\n\nPlease let me know your earliest arrival time and pricing details.`;
+            whatsappLink.href = `https://wa.me/${WHATSAPP_NUM}?text=${encodeURIComponent(message)}`;
+
+            const modal = document.getElementById('service-modal');
+            modal.classList.remove('hidden');
+        };
+
+        function initServiceModal() {
+            const modal = document.getElementById('service-modal');
+            const closeBtn = document.getElementById('modal-close-btn');
+
+            if (closeBtn && modal) {
+                closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+            }
+
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.add('hidden');
+                    }
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+                    modal.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

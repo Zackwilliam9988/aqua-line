@@ -1,0 +1,13 @@
+{
+  "name": "aqualine-plumbing",
+  "version": "1.0.0",
+  "description": "Aqua Line - Master Flow & Precision Plumbing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["plumbing", "aqualine", "red-noir"],
+  "author": "Aqua Line",
+  "license": "ISC"
+}
