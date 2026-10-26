@@ -69,7 +69,7 @@ const server = http.createServer((req, res) => {
                 <html lang="en">
                 <head>
                     <meta charset="UTF-8">
-                    <title>404 Not Found | Aqua Line</title>
+                    <title>404 Not Found | PLUMPK.COM</title>
                     <style>
                         body { background: #000; color: #fff; font-family: sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
                         .box { text-align: center; }
@@ -102,7 +102,7 @@ const server = http.createServer((req, res) => {
 server.listen(PORT, '0.0.0.0', () => {
     const localIp = getLocalIp();
     console.log(`\n==================================================`);
-    console.log(`  🚀 Aqua Line Plumbing Server Running!`);
+    console.log(`  🚀 PLUMPK.COM (Plumbers Pakistan) Server Running!`);
     console.log(`==================================================`);
     console.log(`  > Local:   http://localhost:${PORT}`);
     console.log(`  > Network: http://${localIp}:${PORT}`);

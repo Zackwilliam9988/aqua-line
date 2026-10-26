@@ -1,17 +1,18 @@
 {
-  "name": "aqualine-services",
+  "name": "plumpk",
   "version": "1.0.0",
-  "description": "AquaLine Services Pvt Ltd — Complete Water Treatment Solutions, Equipment, Chemicals, and Application Services",
+  "description": "PLUMPK.COM — Plumbers Pakistan — Complete Water Treatment Solutions, Equipment, Chemicals, and Application Services",
   "scripts": {
     "start": "node local-server.js",
     "dev": "node local-server.js"
   },
   "keywords": [
-    "aqualine",
+    "plumpk",
+    "plumbers-pakistan",
     "water-treatment",
     "chemicals",
     "pakistan"
   ],
-  "author": "AquaLine Services Pvt Ltd",
+  "author": "PLUMPK.COM (Plumbers Pakistan)",
   "license": "ISC"
 }

@@ -195,7 +195,7 @@
   }
 
   async function submitProtectedForm({ form, endpoint, payload, turnstileError, successEl, errorEl, submitButton }) {
-    const formsConfig = window.AQUALINE_FORMS;
+    const formsConfig = window.PLUMPK_FORMS || window.AQUALINE_FORMS;
 
     if (!formsConfig?.enabled || !formsConfig.workerUrl) {
       return { ok: false, reason: "not_configured" };
