@@ -11,6 +11,10 @@ Official web platform for **PLUMPK.COM** (Plumbers Pakistan) — Pakistan's prem
 - **Kitchen & Stove Installation (Chula Fitting & Repair)**: Complete gas and electric stove, built-in hob, and cooking range installation and maintenance. Specialized support for **NasGas**, **Pavilion**, and imported appliances with electronic gas leak safety testing.
 - **24/7 Rapid Emergency Service**: Exclusively available across **Rawalpindi & Islamabad** for emergency pipeline bursts, gas leaks, and urgent blockages.
 
+## Flagship Completed Projects
+- **Zameen Ace Mall (Sector J, DHA Phase 2, Islamabad)**: Mega-scale commercial MEP and heavy drainage infrastructure across a 14-story destination featuring multi-story retail gallerias, high-traffic food court floors (grease interceptor stacks), and luxury guest suites. 100% 10-Bar hydrostatic certified.
+- **Terrace Apartments (Park View City, Zone IV, Islamabad)**: Turnkey sanitary architecture, high-pressure fluid networks, and multi-level balcony/terrace drainage engineered for stepped hillside luxury apartments in Zone IV.
+
 ## Authorized Brands & Materials We Install
 - **PVC & uPVC Pipe Brands**: Dadex, Popular Pipes, AGM, Smart Home
 - **PPR / PPRC Pipe Brands**: Dadex, Raktherm, Aqua Fit, Kalde
