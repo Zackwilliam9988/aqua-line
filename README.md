@@ -8,7 +8,14 @@ Official web platform for **PLUMPK.COM** (Plumbers Pakistan) — Pakistan's prem
 
 ## Services & Coverage
 - **Nationwide Services**: Full plumbing services across Pakistan, including residential, commercial, and industrial facilities. Certified gas pipe installation, pipeline repair, sanitary fittings, and water treatment.
+- **Kitchen & Stove Installation (Chula Fitting & Repair)**: Complete gas and electric stove, built-in hob, and cooking range installation and maintenance. Specialized support for **NasGas**, **Pavilion**, and imported appliances with electronic gas leak safety testing.
 - **24/7 Rapid Emergency Service**: Exclusively available across **Rawalpindi & Islamabad** for emergency pipeline bursts, gas leaks, and urgent blockages.
+
+## Authorized Brands & Materials We Install
+- **PVC & uPVC Pipe Brands**: Dadex, Popular Pipes, AGM, Smart Home
+- **PPR / PPRC Pipe Brands**: Dadex, Raktherm, Aqua Fit, Kalde
+- **Ceramics & Sanitary Ware**: Verona, Roca, Grohe, Hansgrohe, Porta, Zilver, Sardar, Faisal Sanitary
+- **Kitchen Cooking Ranges & Stoves**: NasGas, Pavilion (Gas and Electric Dual-Fuel)
 
 ## Official Contact Details
 - **Helpline / Phone 1:** [+92 304 6902756](tel:+923046902756)

@@ -2618,3 +2618,168 @@ ul { list-style: none; }
     font-size: 0.85rem;
   }
 }
+
+/* Brand Badges and Materials Showcase */
+.brand-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  width: 100%;
+  transition: all 0.25s ease;
+}
+.partner-card:hover .brand-badge,
+.brand-badge:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.brand-badge__title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-bg-dark);
+}
+.brand-badge__sub {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.35rem;
+}
+
+/* Category Filter & Section Chips */
+.brand-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.brand-category-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+.brand-category-card:hover {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+.brand-category-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 2px solid var(--color-bg-alt);
+}
+.brand-category-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #e8f4fd;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.brand-category-card__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-bg-dark);
+  margin: 0;
+}
+.brand-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.brand-chip {
+  display: inline-flex;
+  align-items: center;
+  background: var(--color-bg-alt);
+  color: var(--color-bg-dark);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid #d8e5f0;
+}
+.brand-chip--featured {
+  background: #e6f6ff;
+  color: var(--color-primary-dark);
+  border-color: #bee3f8;
+  font-weight: 700;
+}
+
+/* Kitchen & Stove Showcase Banner */
+.kitchen-stove-banner {
+  background: linear-gradient(135deg, #0a2540 0%, #004d7a 100%);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 2.25rem;
+  margin: 2.5rem 0;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.kitchen-stove-banner::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(0, 180, 216, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.kitchen-stove-banner h3 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+.kitchen-stove-banner p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 1.5rem;
+}
+.kitchen-stove-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+.kitchen-stove-feature {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 1.15rem;
+  border-radius: var(--radius);
+}
+.kitchen-stove-feature h4 {
+  color: var(--color-accent);
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+.kitchen-stove-feature p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
