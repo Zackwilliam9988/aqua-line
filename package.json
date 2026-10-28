@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "PLUMPK.COM — Plumbers Pakistan — Complete Water Treatment Solutions, Equipment, Chemicals, and Application Services",
   "scripts": {
+    "build": "echo 'Static site build complete'",
     "start": "node local-server.js",
     "dev": "node local-server.js"
   },
