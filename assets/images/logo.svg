@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
   <defs>
     <linearGradient id="plumpk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0066a1"/>
+      <stop offset="0%" stop-color="#0b6e4f"/>
       <stop offset="100%" stop-color="#00b4d8"/>
     </linearGradient>
   </defs>
@@ -16,8 +16,8 @@
   </g>
   <!-- Wordmark -->
   <text x="82" y="43" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
-    <tspan fill="#0a2540">PLUM</tspan><tspan fill="#0088cc">PK</tspan><tspan fill="#00b4d8" font-size="24" font-weight="700">.COM</tspan>
+    <tspan fill="#071f18">PLUM</tspan><tspan fill="#128a64">PK</tspan><tspan fill="#00b4d8" font-size="24" font-weight="700">.COM</tspan>
   </text>
   <!-- Full Form Subtext -->
-  <text x="83" y="63" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#5a6b7d">PLUMBERS PAKISTAN</text>
+  <text x="83" y="63" font-family="'Inter', sans-serif" font-size="11.5" font-weight="700" letter-spacing="2.4" fill="#50685e">PLUMBERS PAKISTAN</text>
 </svg>
