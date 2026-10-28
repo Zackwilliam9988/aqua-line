@@ -2581,3 +2581,40 @@ ul { list-style: none; }
   .welcome__actions { flex-direction: column; }
   .welcome__actions .btn { width: 100%; justify-content: center; }
 }
+
+/* Floating WhatsApp Quick Contact Button */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: #25D366;
+  color: #ffffff !important;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.floating-whatsapp:hover {
+  background: #20bd5a;
+  color: #ffffff !important;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6);
+}
+.floating-whatsapp svg {
+  flex-shrink: 0;
+}
+@media (max-width: 600px) {
+  .floating-whatsapp {
+    bottom: 1.25rem;
+    left: 1.25rem;
+    padding: 0.6rem 0.95rem;
+    font-size: 0.85rem;
+  }
+}

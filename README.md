@@ -1,31 +1,30 @@
-# Aqua Line - Master Flow & Precision Plumbing Services
-# AquaLine Services Pvt Ltd
+# PLUMPK.COM — Plumbers Pakistan
 
-A modern, high-performance multi-page web application for **Aqua Line Plumbing Services**, engineered with the **Red Noir** design aesthetic.
-Official 100% clone and web platform for [AquaLine Services Pvt Ltd](https://aqualine.com.pk) — Pakistan's Complete Water Treatment Partner since 2002.
+Official web platform for **PLUMPK.COM** (Plumbers Pakistan) — Pakistan's premier nationwide plumbing, gas piping installation, leak detection, and pipeline maintenance network.
 
-## Features
-- **Red Noir Aesthetic**: Deep obsidian backdrop, subtle animated starfields, glowing crimson lighting accents, and glassmorphism.
-- **Multi-Page Architecture**:
-  - `index.html`: Main landing page with interactive pricing & dispatch estimator, bento grid capabilities, and direct WhatsApp CTA.
-  - `services.html`: Complete directory of 8 specialized categories and 59 plumbing services with real-time search, filter pills, and detailed scope modals.
-  - `emergency.html`: 24/7 Rapid Emergency Response Center with 1-tap WhatsApp dispatch and pre-plumber safety protocols.
-  - `about.html`: Heritage, master guild certifications, diagnostic equipment arsenal, and 4 ironclad customer guarantees.
-  - `contact.html`: Priority booking ticket generator that packages client info directly into a pre-filled WhatsApp message.
-- **WhatsApp Integration**: Instant 1-click booking and photo/video dispatch to `+92 304 6902756`.
-- **Zero-Dependency Local Server**: Built-in Node.js static server with friendly routing and local network preview support.
+## Company Leadership
+- **Saddam Husain** — Managing Director & Co-Founder
+- **Arslan Ali** — Director Operations & Co-Founder
 
-## Overview
-AquaLine Services delivers world-class **chemicals**, **equipment**, and **engineering** — from cooling towers and RO plants to effluent treatment — backed by on-site technical teams in every major industrial city.
+## Services & Coverage
+- **Nationwide Services**: Full plumbing services across Pakistan, including residential, commercial, and industrial facilities. Certified gas pipe installation, pipeline repair, sanitary fittings, and water treatment.
+- **24/7 Rapid Emergency Service**: Exclusively available across **Rawalpindi & Islamabad** for emergency pipeline bursts, gas leaks, and urgent blockages.
 
-## Getting Started
-- **UAN Hotline:** +92 (42) 111 222 221
-- **Email:** info@aqualine.com.pk
-- **Head Office:** Suite # 3, 376 G-III Johar Town, Lahore – Pakistan
-- **Tagline:** *We Promise – We Deliver!*
+## Official Contact Details
+- **Helpline / Phone 1:** [+92 304 6902756](tel:+923046902756)
+- **Helpline / Phone 2:** [+92 303 7139034](tel:+923037139034)
+- **WhatsApp Support:** [+92 304 6902756](https://wa.me/923046902756) & [+92 303 7139034](https://wa.me/923037139034)
+- **Email:** [plumpk@gmail.com](mailto:plumpk@gmail.com)
+- **Head Office:** Flat # 2, Abdullah Plaza, Ghori Town Phase 4-A, Near D-Watson, Islamabad / Rawalpindi, Pakistan
 
-### Prerequisites
-- Node.js (v18+)
+## Running Locally
+```bash
+# Start local server
+npm start
+# Or directly
+node local-server.js
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Pages Included
 - **Home:** `/` (`index.html`)
@@ -35,7 +34,7 @@ AquaLine Services delivers world-class **chemicals**, **equipment**, and **engin
   - Waste Water Chemistry: `/waste-water-chemistry/`
   - Pulp & Paper Chemistry: `/pulp-paper-chemistry/`
   - Sugar & Distillery Solutions: `/sugar-distillery-solutions/`
-- **Equipment:**
+- **Equipment & Engineering:**
   - Engineering Solutions: `/engineering-solutions-by-chemical-kinetics/`
   - Canpure EDI, UF, MF, MBR: `/canpure-edi-uf-mf-mbr/`
   - Membranes & Resins by DuPont: `/membranes-resins-by-dupont/`
@@ -47,17 +46,3 @@ AquaLine Services delivers world-class **chemicals**, **equipment**, and **engin
 - **Careers:** `/careers/`
 - **Contact:** `/contact/`
 - **Privacy Policy:** `/privacy-policy/`
-
-## Running Locally
-```bash
-# Start local server
-npm start
-# Or directly
-node local-server.js
-```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Contact
-- **WhatsApp**: [+92 304 6902756](https://wa.me/923046902756)
-- **Emergency Hotline:** +92 304 6902756
-- **Email:** dispatch@aqualine.com
